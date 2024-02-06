@@ -2,8 +2,44 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="text-black p-4 fixed bottom-0  bg-white w-[90%] rounded-t-2xl">
-      <p className="text-3xl font-semibold">Contact Us.</p>
+    <div className="text-black p-4 z-30 relative flex flex-col gap-4 justify-center items-center h-[40vh] bg-white w-[90%] rounded-t-2xl">
+      <p className="heading md:text-[5rem] text-center text-3xl w-full tracking-tighter capitalize font-medium mb-8">
+        Contact Me.
+      </p>
+      <div className="flex w-5/12 justify-between">
+        <a href="/" target="_blank">
+          <img
+            src={require("../assets/images/logos/Mail.png")}
+            alt="Mail"
+            width={50}
+          />
+        </a>
+        <a href="/" target="_blank">
+          <img
+            src={require("../assets/images/logos/Behance.png")}
+            alt="Mail"
+            width={50}
+          />
+        </a>
+        <a href="/" target="_blank">
+          <img
+            src={require("../assets/images/logos/git.png")}
+            alt="Mail"
+            width={50}
+          />
+        </a>
+        <a href="/" target="_blank">
+          <img
+            src={require("../assets/images/logos/linkedin.png")}
+            alt="Mail"
+            width={50}
+          />
+        </a>
+      </div>
+      <div className="px-3 flex w-full justify-between absolute bottom-0">
+        <p className="courier-prime-bold text-black/80">ikenna</p>
+        <p className="cute-font-regular">&copy; 2024</p>
+      </div>
     </div>
   );
 }
