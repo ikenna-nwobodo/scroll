@@ -1,14 +1,33 @@
 import React from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 function Projects() {
+  gsap.registerPlugin(ScrollTrigger);
+  // let tl = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: ".project-container",
+  //     start: "top top",
+  //     end: "bottom bottom",
+  //     scrub: true,
+  //     markers: true,
+  //     pin: ".projects",
+  //     anticipatePin: 1,
+  //   },
+  // });
+
+  // tl.from(".project-1", { xPercent: -100 })
+  //   .from(".project-2", { xPercent: 100 })
+  //   .from(".project-3", { yPercent: -100 });
+
   return (
-    <div className="bg-black min-h-[110vh] h-max w-full z-30 text-white grid place-items-center">
-      <div className="w-[85%] flex flex-col gap-10 items-center min-h-[80vh] h-max mb-[10vh]">
+    <div className="min-h-[110vh] bg-black h-max w-full z-30 text-white grid place-items-center">
+      <div className="project-container w-[85%] flex flex-col gap-10 items-center min-h-[80vh] h-max mb-[10vh]">
         <p className="heading md:text-[5rem] text-6xl w-full tracking-tighter capitalize font-medium mb-8">
           Projects
         </p>
-        <div className="flex flex-col gap-8 md:gap-20">
-          <div className="flex flex-col md:flex-row gap-4 md:gap-8 w-full">
+        <div className="projects flex flex-col gap-8 md:gap-20">
+          <div className="project-1 flex flex-col md:flex-row gap-4 md:gap-8 w-full relative">
             <p className="text-[4rem] md:text-[8rem] heading leading-tight">
               1.
             </p>
@@ -57,17 +76,17 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 md:gap-8 w-full">
+          <div className="project-2 flex flex-col md:flex-row gap-4 md:gap-8 w-full">
             <p className="text-[4rem] md:text-[8rem] heading leading-tight">
               2.
             </p>
             <div className="md:flex md:gap-14">
-              <div className="flex-1 flex justify-center items-center h-[20vh] md:h-[40vh] rounded-2xl shadow-sm bg-white relative overflow-hidden">
-                <div className="ferr h-full w-full"></div>
+              <div className="flex-1 flex justify-center items-center h-[25vh] md:h-[40vh] rounded-2xl shadow-sm bg-white relative overflow-hidden">
+                <div className="absolute ferr h-full w-full"></div>
                 <img
                   src={require("../assets/images/sx.png")}
                   alt=""
-                  className="absolute left-20 md:left-40 rounded-2xl shadow-2xl w-[300px] md:w-[500px]"
+                  className="md:absolute z-30 md:left-40 rounded-2xl shadow-2xl w-[270px] md:w-[500px]"
                 />
               </div>
               <div className="relative mt-4 md:mt-0 w-full md:w-5/12 flex flex-col gap-4 md:gap-8">
@@ -106,17 +125,17 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 md:gap-8 w-full">
+          <div className="project-3 flex flex-col md:flex-row gap-4 md:gap-8 w-full">
             <p className="text-[4rem] md:text-[8rem] heading leading-tight">
               3.
             </p>
             <div className="md:flex md:gap-14">
-              <div className="flex-1 flex justify-center items-center h-[20vh] md:h-[40vh] rounded-2xl shadow-sm bg-white relative overflow-hidden">
-                <div className="def h-full w-full"></div>
+              <div className="flex-1 flex justify-center items-center h-[25vh] md:h-[40vh] rounded-2xl shadow-sm bg-white relative overflow-hidden">
+                <div className="absolute def h-full w-full"></div>
                 <img
                   src={require("../assets/images/mt.png")}
                   alt=""
-                  className="absolute left-20 md:left-40 rounded-2xl shadow-2xl w-[300px] md:w-[500px]"
+                  className="md:absolute z-30 md:left-40 rounded-2xl shadow-2xl w-[270px] md:w-[500px]"
                 />
               </div>
               <div className="relative mt-4 md:mt-0 w-full md:w-5/12 flex flex-col gap-4 md:gap-8">
