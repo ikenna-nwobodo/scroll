@@ -13,7 +13,7 @@ function Projects() {
               1.
             </p>
             <div className="md:flex md:gap-14">
-              <div className="flex-1 flex justify-center items-center h-[20vh] md:h-[40vh] rounded-2xl shadow-sm bg-white relative overflow-hidden">
+              <div className="flex-1 flex justify-center items-center h-[25vh] md:h-[40vh] rounded-2xl shadow-sm bg-white relative overflow-hidden">
                 <div className="absolute home h-full w-full"></div>
                 <img
                   src={require("../assets/images/rn.png")}
