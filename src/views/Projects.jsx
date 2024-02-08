@@ -14,11 +14,11 @@ function Projects() {
             </p>
             <div className="md:flex md:gap-14">
               <div className="flex-1 flex justify-center items-center h-[20vh] md:h-[40vh] rounded-2xl shadow-sm bg-white relative overflow-hidden">
-                <div className="home h-full w-full"></div>
+                <div className="absolute home h-full w-full"></div>
                 <img
                   src={require("../assets/images/rn.png")}
                   alt=""
-                  className="absolute left-20 md:left-40 rounded-2xl shadow-2xl w-[300px] md:w-[500px]"
+                  className="md:absolute z-30 md:left-40 rounded-2xl shadow-2xl w-[270px] md:w-[500px]"
                 />
               </div>
               <div className="relative mt-4 md:mt-0 w-full md:w-5/12 flex flex-col gap-4 md:gap-8">
