@@ -2,37 +2,37 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="text-black p-4 z-30 relative flex flex-col gap-4 justify-center items-center h-[40vh] bg-white w-[90%] rounded-t-2xl">
-      <p className="heading md:text-[5rem] text-center text-3xl w-full tracking-tighter capitalize font-medium mb-8">
+    <div className="text-black p-4 z-30 relative flex flex-col gap-4 justify-center items-center h-[20vh] bg-white w-[90%] rounded-t-2xl">
+      <p className="heading md:text-[5rem] text-center text-6xl w-full tracking-tighter capitalize font-medium mb-8">
         Contact Me.
       </p>
-      <div className="flex w-5/12 justify-between">
+      <div className="flex w-10/12 md:w-5/12 justify-between">
         <a href="/" target="_blank">
           <img
             src={require("../assets/images/logos/Mail.png")}
             alt="Mail"
-            width={50}
+            className="w-[30px] md:w-[50px]"
           />
         </a>
         <a href="/" target="_blank">
           <img
             src={require("../assets/images/logos/Behance.png")}
             alt="Mail"
-            width={50}
+            className="w-[30px] md:w-[50px]"
           />
         </a>
         <a href="/" target="_blank">
           <img
             src={require("../assets/images/logos/git.png")}
             alt="Mail"
-            width={50}
+            className="w-[30px] md:w-[50px]"
           />
         </a>
         <a href="/" target="_blank">
           <img
             src={require("../assets/images/logos/linkedin.png")}
             alt="Mail"
-            width={50}
+            className="w-[30px] md:w-[50px]"
           />
         </a>
       </div>
