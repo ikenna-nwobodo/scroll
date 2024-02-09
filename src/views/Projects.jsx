@@ -1,9 +1,24 @@
 import React from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
 
 function Projects() {
-  gsap.registerPlugin(ScrollTrigger);
+  // useGSAP(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".project-container",
+  //       pin: ".project-container",
+  //       top: "top top",
+  //       end: "bottom bottom",
+  //       marker: true,
+  //     },
+  //   });
+  //   tl.from(".project-1", { xPercent: 100 });
+  // });
+
   // let tl = gsap.timeline({
   //   scrollTrigger: {
   //     trigger: ".project-container",
@@ -21,7 +36,7 @@ function Projects() {
   //   .from(".project-3", { yPercent: -100 });
 
   return (
-    <div className="min-h-[110vh] bg-black h-max w-full z-30 text-white grid place-items-center">
+    <div className="min-h-[110vh] bg-black relative h-max pb-20 w-full z-30 text-white grid place-items-center">
       <div className="project-container w-[85%] flex flex-col gap-10 items-center min-h-[80vh] h-max mb-[10vh]">
         <p className="heading md:text-[5rem] text-6xl w-full tracking-tighter capitalize font-medium mb-8">
           Projects
@@ -40,10 +55,21 @@ function Projects() {
                   className="md:absolute z-30 md:left-40 rounded-2xl shadow-2xl w-[270px] md:w-[500px]"
                 />
               </div>
-              <div className="relative mt-4 md:mt-0 w-full md:w-5/12 flex flex-col gap-4 md:gap-8">
+              <div className="relative mt-4 md:mt-0 w-full md:w-5/12 flex flex-col gap-4 md:gap-6">
                 <p className="text-3xl md:text-[4rem] font-medium tracking-tighter head">
                   Project 1
                 </p>
+                <div className="text-xs flex gap-4 text-black mt-2">
+                  <span className="bg-white px-2 py-0.5 rounded-full">
+                    React
+                  </span>
+                  <span className="bg-white px-2 py-0.5 rounded-full">
+                    Tailwind CSS
+                  </span>
+                  <span className="bg-white px-2 py-0.5 rounded-full">
+                    GSAP
+                  </span>
+                </div>
                 <p className="text-sm tracking-wide">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -175,6 +201,11 @@ function Projects() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="bg-gradient-to-b from-transparent via-black to-black from w-full absolute grid place-items-center bottom-0 h-[27vh] z-50">
+        <button className="px-5 py-3 border border-white text-sm hover:bg-white text-white hover:text-black">
+          See More
+        </button>
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ code {
   letter-spacing: -0.1em;
 }
 .home {
-  background: linear-gradient(-45deg, #003314, #007e8f, #004b76, #008172);
+  background: linear-gradient(-45deg, #003314, #007e8f, #013451, #004b76, #008172);
   background-size: 400% 400%;
   /* filter: blur(100px); */
   /* z-index: 200; */
