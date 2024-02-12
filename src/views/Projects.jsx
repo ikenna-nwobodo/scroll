@@ -1,7 +1,7 @@
 import React from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/all";
+// import { useGSAP } from "@gsap/react";
 
 function Projects() {
   // useGSAP(() => {
@@ -36,8 +36,8 @@ function Projects() {
   //   .from(".project-3", { yPercent: -100 });
 
   return (
-    <div className="min-h-[110vh] bg-black relative h-max pb-20 w-full z-30 text-white grid place-items-center">
-      <div className="project-container w-[85%] flex flex-col gap-10 items-center min-h-[80vh] h-max mb-[10vh]">
+    <div className="min-h-[110vh] bg-black relative pb-20 w-full z-30 text-white grid place-items-center">
+      <div className="project-container w-[85%] py-40 flex flex-col gap-10 items-center min-h-[80vh] h-max mb-[10vh]">
         <p className="heading md:text-[5rem] text-6xl w-full tracking-tighter capitalize font-medium mb-8">
           Projects
         </p>
@@ -202,11 +202,14 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-b from-transparent via-black to-black from w-full absolute grid place-items-center bottom-0 h-[27vh] z-50">
+      <button className="px-5 py-3 border border-white text-sm hover:bg-white text-white hover:text-black">
+        See More
+      </button>
+      {/* <div className="bg-gradient-to-b from-transparent via-black to-black from w-full absolute grid place-items-center bottom-0 h-[27vh] z-50">
         <button className="px-5 py-3 border border-white text-sm hover:bg-white text-white hover:text-black">
           See More
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

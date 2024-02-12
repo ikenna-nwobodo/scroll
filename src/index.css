@@ -32,17 +32,24 @@ code {
   letter-spacing: -0.1em;
 }
 .home {
-  background: linear-gradient(-45deg, #003314, #007e8f, #013451, #004b76, #008172);
+  background: linear-gradient(
+    -45deg,
+    #003314,
+    #007e8f,
+    #013451,
+    #004b76,
+    #008172
+  );
   background-size: 400% 400%;
   /* filter: blur(100px); */
   /* z-index: 200; */
-  animation: gradient 10s ease infinite;
+  animation: gradient 20s ease infinite;
 }
 .ferr {
   background: linear-gradient(45deg, #027585, #001114, #073d45, #ffffff);
   background-size: 400% 400%;
   /* filter: blur(100px); */
-  animation: gradient 10s ease infinite;
+  animation: gradient 20s ease infinite;
 }
 .cute-font-regular {
   font-family: "Cute Font", sans-serif;
@@ -64,7 +71,24 @@ code {
   background: linear-gradient(45deg, #1c5c5e, #1d6253, #202031);
   background-size: 400% 400%;
   /* filter: blur(100px); */
-  animation: gradient 10s ease infinite;
+  animation: gradient 20s ease infinite;
+}
+.we {
+  background: linear-gradient(to bottom left, #ffffff00, #0000, #013451);
+  animation: we 10s ease-in-out infinite;
+}
+@keyframes we {
+  0% {
+    background: linear-gradient(to bottom left, #ffffff00, #0000, #013451);
+  }
+  50% {
+    /* transform: translateY(-50%); */
+    /* background: linear-gradient(to bottom, #ffffff00, #0000, #013451); */
+  }
+  100% {
+    /* transform: translateY(0%); */
+    /* background: linear-gradient(to bottom right, #ffffff00, #0000, #013451); */
+  }
 }
 @keyframes gradient {
   0% {
