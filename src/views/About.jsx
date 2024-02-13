@@ -9,7 +9,7 @@ function Mid() {
         </p>
         <div className="grid md:grid-cols-3 items-center gap-4 md:gap-8 justify-between w-full md:w-[90%] flex-1 ">
           <div className="md:h-4/5 min-h-max overflow-hidden p-5 bg-gradient-to-bl from-transparent via-black to-[#013451] col-span-2 text-white rounded-xl grid place-items-center text-center">
-            <p className="lg:w-8/12 text-sm md:text-lg tracking-wide leading-5 md:leading-9">
+            <p className="lg:w-8/12 text-base md:text-lg tracking-wide leading-9">
               I am a versatile professional with expertise in web development,
               UI/UX design & graphic design. With a strong foundation in modern
               web technologies I create responsive and interactive websites that
