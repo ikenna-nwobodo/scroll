@@ -1,7 +1,7 @@
 import React from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/all";
+// import { useGSAP } from "@gsap/react";
 
 function Projects() {
   // useGSAP(() => {
