@@ -111,13 +111,13 @@ code {
   transition: 0.3s linear;
 }
 
-.project {
+/* .project {
   justify-content: center;
   align-items: center;
   height: 80vh;
   width: 100%;
   background-color: black;
-}
+} */
 /* .project-1 {
   background-color: red;
 }
