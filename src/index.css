@@ -101,6 +101,12 @@ code {
     background-position: 0% 50%;
   }
 }
+
+.landing {
+  background: linear-gradient(130deg, #ffffff, #025d3d);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
 /* 1C5C5E 1D6253 4F2744 202031 */
 .hide {
   top: -80px;
@@ -110,14 +116,13 @@ code {
   top: 0px;
   transition: 0.3s linear;
 }
-
-.project {
+/* .project {
   justify-content: center;
   align-items: center;
   height: 80vh;
   width: 100%;
   background-color: black;
-}
+} */
 /* .project-1 {
   background-color: red;
 }

@@ -4,28 +4,28 @@ import React from "react";
 // import { useGSAP } from "@gsap/react";
 
 function Projects() {
-  useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.utils.toArray(".project").forEach((project, i) => {
-      ScrollTrigger.create({
-        trigger: project,
-        start: "top top",
-        pin: true,
-        pinSpacing: false,
-        snap: 1,
-      });
-      gsap.from(project.children, {
-        y: 50,
-        opacity: 0,
-        scrollTrigger: {
-          trigger: project,
-          start: "top center",
-          end: "bottom bottom",
-          toggleActions: "play none reverse reset",
-        },
-      });
-    });
-  });
+  // useGSAP(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   gsap.utils.toArray(".project").forEach((project, i) => {
+  //     ScrollTrigger.create({
+  //       trigger: project,
+  //       start: "top top",
+  //       pin: true,
+  //       pinSpacing: false,
+  //       snap: 1,
+  //     });
+  //     gsap.from(project.children, {
+  //       y: 50,
+  //       opacity: 0,
+  //       scrollTrigger: {
+  //         trigger: project,
+  //         start: "top center",
+  //         end: "bottom bottom",
+  //         toggleActions: "play none reverse reset",
+  //       },
+  //     });
+  //   });
+  // });
 
   return (
     <div className="min-h-[110vh] bg-black relative pb-20 w-full z-30 text-white grid place-items-center">
