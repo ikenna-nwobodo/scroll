@@ -6,8 +6,7 @@ const projects = [
     stack: ["React", "Tailwind CSS", "Firebase"],
     link: "https://schedulex.vercel.app/",
     bg: "ferr",
-    image:
-      "https://drive.google.com/file/d/1HxT7wc2K0DFzLyGcZ0yWYxXM6ipN2v3I/view?usp=drive_link",
+    image: require('../assets/images/sx.png'),
     git: "https://github.com/ikenna-nwobodo/schedulex",
   },
   {
@@ -18,8 +17,7 @@ const projects = [
     link: "https://rundwn-one.vercel.app/",
     git: "https://github.com/ikenna-nwobodo/rundwn",
     bg: "home",
-    image:
-      "https://drive.google.com/file/d/1NUa5lJDNUhTzPm7dN9RAaODPB__pqeLh/view?usp=drive_link",
+    image: require('../assets/images/rn.png'),
   },
   {
     title: "Mintlify",
@@ -27,8 +25,7 @@ const projects = [
     stack: ["React", "Tailwind CSS"],
     link: "https://mintlify-zeta.vercel.app/",
     bg: "def",
-    image:
-      "https://drive.google.com/file/d/1tWJ_It4SD6_rTOFh3aE9ytXV_rp5G0we/view?usp=drive_link",
+    image: require('../assets/images/mt.png'),
     git: "https://github.com/ikenna-nwobodo/mintlify",
   },
   {

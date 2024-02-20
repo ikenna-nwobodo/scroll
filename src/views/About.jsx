@@ -2,13 +2,13 @@ import React from "react";
 
 function Mid() {
   return (
-    <div className="bg-black min-h-[110vh] w-full z-30 text-white grid place-items-center">
-      <div className="w-[85%] flex flex-col gap-10 items-center min-h-[80vh] py-32">
+    <div className="md:min-h-[110vh] bg-black relative md:pb-20 w-full z-30 text-white grid place-items-center">
+      <div className="w-[85%] py-20 flex flex-col gap-10 items-center md:min-h-[80vh] h-max">
         <p className="heading md:text-[5rem] text-6xl w-full tracking-tighter capitalize font-medium">
           ABOUT ME
         </p>
-        <div className="grid md:grid-cols-3 items-center gap-4 md:gap-8 justify-between w-full md:w-[90%] flex-1 ">
-          <div className="md:h-4/5 min-h-max overflow-hidden p-5 bg-gradient-to-tr md:bg-gradient-to-bl from-transparent via-black to-[#013451] col-span-2 text-white rounded-xl grid place-items-center text-center">
+        <div className="flex flex-col lg:flex-row justify-center items-center md:items-center lg:items-start gap-10">
+          <div className="min-h-max h-full w-10/12 lg:w-5/12 overflow-hidden p-5 bg-gradient-to-tr md:bg-gradient-to-bl from-transparent via-black to-[#013451]  text-white rounded-xl grid place-items-center text-center">
             <p className="lg:w-8/12 text-sm md:text-lg md:tracking-wide md:leading-9 leading-7">
               I am a versatile professional with expertise in web development,
               UI/UX design & graphic design. With a strong foundation in modern
@@ -19,7 +19,7 @@ function Mid() {
             </p>
           </div>
           {/* bg-gradient-to-br from-transparent via-black to-[#013451] */}
-          <div className="flex gap-3 flex-col md:col-span-1 col-span-2 h-4/5">
+          <div className="flex gap-3 flex-col w-10/12 lg:w-max">
             <p className="text-xl font-semibold">Work Experience</p>
             <div className="flex-1 bg-gradient-to-bl md:bg-gradient-to-tr from-transparent via-black to-[#013451]  text-white rounded-xl flex flex-col items-center gap-8 py-8 text-center">
               <div className="w-11/12 text-left py-2 px-4 border-l-4 border-[#013451]">
@@ -43,5 +43,6 @@ function Mid() {
     </div>
   );
 }
+// grid bg-yellow-500 md:grid-cols-3 items-center gap-4 md:gap-8 justify-between w-full md:w-[90%] flex-1
 
 export default Mid;
