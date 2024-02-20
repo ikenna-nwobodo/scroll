@@ -51,6 +51,18 @@ code {
   /* filter: blur(100px); */
   animation: gradient 20s ease infinite;
 }
+.gl {
+  background: linear-gradient(45deg, #150e28, #903aff, #d434fe);
+  background-size: 400% 400%;
+  /* filter: blur(100px); */
+  animation: gradient 20s ease infinite;
+}
+.qc {
+  background: linear-gradient(45deg, #6305b1, #8006e4, #ffffff);
+  background-size: 400% 400%;
+  /* filter: blur(100px); */
+  animation: gradient 20s ease infinite;
+}
 .cute-font-regular {
   font-family: "Cute Font", sans-serif;
   font-weight: 400;
