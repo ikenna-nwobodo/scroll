@@ -9,27 +9,29 @@ function Home() {
           <p className="heading md:text-[6rem] text-6xl w-full text-center md:text-left tracking-tighter capitalize font-medium mb-8">
             NWOBODO IKENNA
           </p>
-          <div className="flex items-center w-full md:justify-start justify-center gap-3 md:text mb-3">
-            <p className="text-xl md:text-4xl text-center md:text-left">
+          <div className="flex items-center w-full md:justify-start justify-center gap-3 md:text md:mb-3 mb-1">
+            <p className="text-base font-medium md:text-4xl text-center md:text-left">
               FRONTEND DEVELOPER
             </p>
             <span className="heading text-5xl md:block hidden">-</span>
           </div>
-          <div className="flex items-center w-full md:justify-start justify-center gap-3 md:text mb-3">
-            <p className="text-xl md:text-4xl text-center md:text-left">
+          <div className="flex items-center w-full md:justify-start justify-center gap-3 md:text md:mb-3 mb-1">
+            <p className="text-base font-medium md:text-4xl text-center md:text-left">
               GRAPHIC DESIGNER
             </p>
             <span className="heading text-5xl md:block hidden">-</span>
           </div>
-          <div className="flex items-center w-full md:justify-start justify-center gap-3 md:text mb-3">
-            <p className="text-xl md:text-4xl text-center md:text-left">
+          <div className="flex items-center w-full md:justify-start justify-center gap-3 md:text md:mb-3 mb-1">
+            <p className="text-base font-medium md:text-4xl text-center md:text-left">
               PRODUCT DESIGNER
             </p>
             <span className="heading text-5xl md:block hidden">-</span>
           </div>
-          <button className="bg-black text-white px-4 py-2 border border-black rounded-md mt-6 hover:-translate-y-1 hover:bg-white hover:text-black shadow-2xl">
-            Download Resume
-          </button>
+          <div className="w-full flex justify-center md:justify-start items-center">
+            <button className="bg-black text-sm md:text-base text-white px-4 py-2 border border-black rounded-md mt-6 hover:-translate-y-1 hover:bg-white hover:text-black shadow-2xl">
+              Download Resume
+            </button>
+          </div>
         </div>
       </div>
     </div>
