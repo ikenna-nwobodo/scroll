@@ -28,9 +28,14 @@ function Home() {
             <span className="heading text-5xl md:block hidden">-</span>
           </div>
           <div className="w-full flex justify-center md:justify-start items-center">
-            <button className="bg-black text-sm md:text-base text-white px-4 py-2 border border-black rounded-md mt-6 hover:-translate-y-1 hover:bg-white hover:text-black shadow-2xl">
+            <a
+              href="https://drive.google.com/file/d/1BtQGDm0ZY8iNNqBnZM5sCjPGbhEz4PlO/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="bg-black text-sm md:text-base text-white px-4 py-2 border border-black rounded-md mt-6 hover:-translate-y-1 hover:bg-white hover:text-black shadow-2xl"
+            >
               Download Resume
-            </button>
+            </a>
           </div>
         </div>
       </div>
