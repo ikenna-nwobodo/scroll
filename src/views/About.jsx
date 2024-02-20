@@ -7,17 +7,17 @@ function Mid() {
         <p className="heading md:text-[5rem] text-6xl w-full tracking-tighter capitalize font-medium">
           ABOUT ME
         </p>
-        <div className="flex flex-col lg:flex-row justify-center items-center md:items-center lg:items-start gap-10">
-          <div className="min-h-max h-full w-full lg:w-5/12 overflow-hidden p-5 bg-gradient-to-tr md:bg-gradient-to-bl from-transparent via-black to-[#013451]  text-white rounded-xl grid place-items-center text-center">
-            <p className="lg:w-8/12 bg-red-600 text-sm md:text-lg md:tracking-wide md:leading-9 leading-7">
-              I am a versatile professional with expertise in web development,
-              UI/UX design & graphic design. With a strong foundation in modern
-              web technologies I create responsive and interactive websites that
-              prioritize user experience and SEO. I also design visually
-              captivating user interfaces, marketing materials, and social media
-              graphics.
-            </p>
-          </div>
+        <div className="flex flex-col lg:flex-row justify-center items-center  gap-10">
+          {/* <div className="min-h-max h-full w-full lg:w-5/12 overflow-hidden p-5 bg-gradient-to-tr md:bg-gradient-to-bl from-transparent via-black to-[#013451] text-white rounded-xl grid place-items-center text-center"> */}
+          <p className="w-full lg:w-5/12 p-5 bg-gradient-to-tr md:bg-gradient-to-bl from-transparent via-black to-[#013451] text-sm md:text-lg md:tracking-wide rounded-xl text-center md:leading-9 leading-7">
+            I am a versatile professional with expertise in web development,
+            UI/UX design & graphic design. With a strong foundation in modern
+            web technologies I create responsive and interactive websites that
+            prioritize user experience and SEO. I also design visually
+            captivating user interfaces, marketing materials, and social media
+            graphics.
+          </p>
+          {/* </div> */}
           {/* bg-gradient-to-br from-transparent via-black to-[#013451] */}
           <div className="flex gap-3 flex-col w-full lg:w-max">
             <p className="text-xl font-semibold">Work Experience</p>
