@@ -1,22 +1,19 @@
 import Navbar from "./components/Navbar";
-import Footer from "./views/Footer";
-import Home from "./views/Home";
-import Mid from "./views/About";
-import Projects from "./views/Projects";
-import Headroom from "react-headroom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Render from "./Render";
+import ProjectPage from "./views/ProjectPage";
 
 function App() {
   return (
-    <div className="relative bg-black selection:bg-white selection:text-black min-h-screen flex flex-col items-center">
-      {/* <Headroom>
+    <BrowserRouter>
+      <div className="relative bg-black selection:bg-white selection:text-black min-h-screen flex flex-col items-center">
         <Navbar />
-      </Headroom> */}
-      <Navbar />
-      <Home />
-      <Mid />
-      <Projects />
-      <Footer />
-    </div>
+        <Routes>
+          <Route path="/" index element={<Render />} />
+          <Route path="projects" element={<ProjectPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
