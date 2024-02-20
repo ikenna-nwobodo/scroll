@@ -9,7 +9,7 @@ function Mid() {
         </p>
         <div className="flex flex-col lg:flex-row justify-center items-center md:items-center lg:items-start gap-10">
           <div className="min-h-max h-full w-full lg:w-5/12 overflow-hidden p-5 bg-gradient-to-tr md:bg-gradient-to-bl from-transparent via-black to-[#013451]  text-white rounded-xl grid place-items-center text-center">
-            <p className="lg:w-8/12 text-sm md:text-lg md:tracking-wide md:leading-9 leading-7">
+            <p className="lg:w-8/12 bg-red-600 text-sm md:text-lg md:tracking-wide md:leading-9 leading-7">
               I am a versatile professional with expertise in web development,
               UI/UX design & graphic design. With a strong foundation in modern
               web technologies I create responsive and interactive websites that
