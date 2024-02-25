@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [menu, setMenu] = useState("false");
@@ -43,12 +44,11 @@ function Navbar() {
             >
               About me
             </a>
-            <a
-              href="/"
-              className="text-xs font-bold uppercase hover:-translate-y-0.5"
-            >
-              Projects
-            </a>
+            <Link to="/projects">
+              <div className="text-xs font-bold uppercase hover:-translate-y-0.5">
+                Projects
+              </div>
+            </Link>
             <a
               href="/"
               className="text-xs font-bold uppercase hover:-translate-y-0.5"

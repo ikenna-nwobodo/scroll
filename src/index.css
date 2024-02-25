@@ -80,7 +80,7 @@ code {
   font-style: normal;
 }
 .def {
-  background: linear-gradient(45deg, #1c5c5e, #1d6253, #202031);
+  background: linear-gradient(45deg, #000000, #93000080, #000000);
   background-size: 400% 400%;
   /* filter: blur(100px); */
   animation: gradient 20s ease infinite;
