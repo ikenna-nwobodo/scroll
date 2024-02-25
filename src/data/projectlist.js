@@ -41,10 +41,10 @@ const projects = [
     title: "Dictionary",
     description:
       "A dictionary application that enables users to look up words, explore their different meanings, and listen to their various pronunciations.",
-    stack: ["HTML", "CSS", "Javascript"],
-    link: "https://i-dictionary.vercel.app/",
+    stack: ["React", "TailwindCSS", "Framer Motion"],
+    link: "https://idict.vercel.app/",
     image: require("../assets/images/dt.png"),
-    bg: "def",
+    bg: "dt",
   },
   {
     title: "GetLinked",
