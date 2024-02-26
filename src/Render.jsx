@@ -3,6 +3,7 @@ import Footer from "./views/Footer";
 import Home from "./views/Home";
 import Mid from "./views/About";
 import Projects from "./views/Projects";
+import transition from "./transition";
 
 function Render() {
   return (
@@ -15,4 +16,4 @@ function Render() {
   );
 }
 
-export default Render;
+export default transition(Render);

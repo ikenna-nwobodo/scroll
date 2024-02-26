@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import projects from "../data/projectlist";
+import transition from "../transition";
 
 function ProjectPage() {
   const [show, setShow] = useState(false);
@@ -112,4 +113,4 @@ function ProjectPage() {
   );
 }
 
-export default ProjectPage;
+export default transition(ProjectPage);
