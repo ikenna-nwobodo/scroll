@@ -1,6 +1,7 @@
 import React from "react";
 import projects from "../data/projectlist";
 import { Link } from "react-router-dom";
+
 // import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/all";
 // import { useGSAP } from "@gsap/react";
@@ -95,7 +96,10 @@ function Projects() {
               );
             })}
           </div>
-          <Link to="projects" className="px-5 py-3 border mt-10 border-white text-sm hover:bg-white text-white hover:text-black">
+          <Link
+            to="projects"
+            className="px-5 py-3 border mt-10 border-white text-sm hover:bg-white text-white hover:text-black"
+          >
             See More
           </Link>
         </div>
