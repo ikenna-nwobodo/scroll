@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import projects from "../data/projectlist";
 import transition from "../transition";
+import { Link } from "react-router-dom";
 
 function ProjectPage() {
   const [show, setShow] = useState(false);
@@ -27,18 +28,27 @@ function ProjectPage() {
 
   return (
     <div className="text-white w-[85%] overflow-hidden h-screen">
-      <div className="relative mt-28">
-        <p className="heading md:text-[6rem] mb-4 text-6xl w-full tracking-tighter capitalize font-medium">
-          Projects
-        </p>
-        <div className="bg-gradient-to-b from-transparent to-black w-full h-[15%] absolute z-40 bottom-0"></div>
+      <div className="relative">
+        <div className="flex items-center gap-6 justify-center mb-3 mt-8">
+          <Link
+            to={"/"}
+            className="btn-i px-4 text-xs py-2 border border-white flex gap-2 items-center w-max"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+            Back
+          </Link>
+          <p className="heading md:text-6xl text-6xl w-full tracking-tighter capitalize font-medium">
+            Projects
+          </p>
+        </div>
+        <div className="bg-gradient-to-b from-transparent to-black w-full h-[25%] absolute z-40 bottom-0"></div>
         <div className="relative">
           <div
             className={`bg-gradient-to-t from-transparent to-black w-full h-[10%] absolute z-40 top-0 ${
               show && "hidden"
             }`}
           ></div>
-          <div className="relative top-0 h-[75vh] overflow-auto">
+          <div className="relative top-0 h-[100vh] pb-40 overflow-auto">
             <div className="projects flex justify-center items-center mb-[10vh] h-fit flex-col gap-8 md:gap-20">
               {projects.map((project) => {
                 return (
@@ -53,7 +63,11 @@ function ProjectPage() {
                       {projects.lastIndexOf(project) + 1}.
                     </p>
                     <div className="md:flex w-full justify-between items-center md:gap-14">
-                      <div className="flex-1 shadow-xl flex justify-center items-center h-[25vh] md:h-[40vh] rounded-2xl md:shadow-sm bg-transparent relative overflow-hidden">
+                      <Link
+                        to={project.link}
+                        target="_blank"
+                        className="flex-1 shadow-xl flex justify-center items-center h-[25vh] md:h-[40vh] rounded-2xl md:shadow-sm bg-transparent relative overflow-hidden"
+                      >
                         <div
                           className={`absolute ${project.bg} h-full w-full`}
                         ></div>
@@ -62,7 +76,7 @@ function ProjectPage() {
                           alt=""
                           className="md:absolute z-30 md:left-40 rounded-2xl shadow-2xl w-[270px] md:w-[500px]"
                         />
-                      </div>
+                      </Link>
                       <div className="relative mt-4 h-5/6 md:mt-0 w-full md:w-5/12 flex flex-col gap-2 md:gap-6">
                         <p className="text-3xl md:text-[4rem] font-medium tracking-tighter head">
                           {project.title}

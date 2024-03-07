@@ -4,8 +4,12 @@
 @tailwind variants;
 /* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cute+Font&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@font-face {
+  font-family: "Bile";
+  src: local("Bile"), url("./assets/fonts/Bile.woff") format("woff");
+}
 * {
-  transition: all ease-in-out 400ms;
+  transition: all ease-in-out 500ms;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -43,25 +47,25 @@ code {
   background-size: 400% 400%;
   /* filter: blur(100px); */
   /* z-index: 200; */
-  animation: gradient 20s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 .ferr {
   background: linear-gradient(45deg, #027585, #001114, #073d45, #ffffff);
   background-size: 400% 400%;
   /* filter: blur(100px); */
-  animation: gradient 20s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 .gl {
   background: linear-gradient(45deg, #150e28, #903aff, #d434fe);
   background-size: 400% 400%;
   /* filter: blur(100px); */
-  animation: gradient 20s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 .qc {
   background: linear-gradient(45deg, #6305b1, #8006e4, #ffffff);
   background-size: 400% 400%;
   /* filter: blur(100px); */
-  animation: gradient 20s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 .cute-font-regular {
   font-family: "Cute Font", sans-serif;
@@ -83,13 +87,13 @@ code {
   background: linear-gradient(45deg, #1c4b42, #121e2c, #000000);
   background-size: 400% 400%;
   /* filter: blur(100px); */
-  animation: gradient 20s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 .dt {
   background: linear-gradient(45deg, #000000, #93000080, #000000);
   background-size: 400% 400%;
   /* filter: blur(100px); */
-  animation: gradient 20s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 .we {
   background: linear-gradient(to bottom left, #ffffff00, #0000, #013451);
@@ -123,7 +127,7 @@ code {
 .landing {
   background: linear-gradient(130deg, #ffffff, #025d3d);
   background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 /* 1C5C5E 1D6253 4F2744 202031 */
 .hide {

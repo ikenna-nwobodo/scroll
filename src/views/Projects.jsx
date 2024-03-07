@@ -1,6 +1,9 @@
 import React from "react";
 import projects from "../data/projectlist";
 import { Link } from "react-router-dom";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 // import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/all";
@@ -30,6 +33,29 @@ function Projects() {
   //   });
   // });
 
+  // useGSAP(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   gsap.utils.toArray(".projects").forEach((project) => {
+  //     ScrollTrigger.create({
+  //       trigger: project,
+  //       start: "top bottom",
+  //     });
+  //     gsap.from(project.children, {
+  //       opacity: 0,
+  //       scrollTrigger: {
+  //         trigger: project,
+  //         start: "top bottom",
+  //         end: "bottom bottom",
+  //         toggleActions: "play none reverse reset",
+  //       },
+  //     });
+  //   });
+
+  //   // gsap.from(".project", {
+  //   //   scrollTrigger: ".project",
+  //   //   opacity: 0,
+  //   // });
+  // });
   return (
     <div className="md:min-h-[110vh] bg-black relative md:pb-20 w-full z-30 text-white grid place-items-center">
       <div className="w-[85%] md:py-40 py-20 flex flex-col items-center md:min-h-[80vh] h-max md:mb-[10vh]">

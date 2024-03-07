@@ -9,7 +9,6 @@ function App() {
 
   return (
     <div className="relative bg-black selection:bg-white selection:text-black min-h-screen flex flex-col items-center">
-      <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route index element={<Render />} />
